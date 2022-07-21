@@ -1,0 +1,10 @@
+workspace 'precommit.xcworkspace'
+# use_frameworks!
+platform :ios,'9.0'
+def swiftlint_pods
+	pod 'SwiftLint'
+end
+
+target 'precommit' do
+	swiftlint_pods
+end

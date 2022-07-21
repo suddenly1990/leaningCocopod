@@ -1,0 +1,11 @@
+repos:
+-   repo: git@github.com:realm/SwiftLint.git
+    rev: v0.47.1
+    hooks:
+    -   id: swiftlint
+-   repo: git@github.com:pocc/pre-commit-hooks.git
+    rev: v1.3.0
+    hooks:
+    -   id: oclint 
+
+
