@@ -1,5 +1,3 @@
-excluded:
-  - Pods
 disabled_rules:
     - trailing_whitespace # 每一个空行不能有空格，会与Xcode换行后自动对齐生成的空格冲突，建议排除掉加。
     - missing_docs # 缺失说明注释, 官方解释：”Public declarations should be documented.”， 公共声明应该被注释/标记。 在函数声明的时候， 一般情况下， 带public关键字的函数的注释只能用 “///”和 “/* /”来注释， 如果不带public关键字的函数只能用 “//”和 “/* */” 。这个属性应该禁用，没必要！！！
@@ -12,8 +10,8 @@ disabled_rules:
     - class_delegate_protocol #delegate protocol 应该被设定为 class-only,才能被弱引用
     - todo #避免 TODOs and FIXMEs 标识
 cyclomatic_complexity: 20 #代码复杂度,默认为10
-force_try: warning # try语句判断
-force_cast: warning # 强制转换（代码中存在一些前面通过if判断过类型，后面做的强制转换的代码）
+#force_try: warning # try语句判断
+#force_cast: warning # 强制转换（代码中存在一些前面通过if判断过类型，后面做的强制转换的代码）
 line_length:    #每行长度限制
   warning: 160
   error: 300
@@ -28,3 +26,6 @@ function_body_length:   #函数体长度
 type_body_length:   #类的长度
   warning: 800
   error: 1200
+excluded:
+  - Pods
+  - precommit/nocheck
