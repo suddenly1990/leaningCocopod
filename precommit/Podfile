@@ -1,10 +1,29 @@
 workspace 'precommit.xcworkspace'
 # use_frameworks!
+post_install do |installer|
+  installer.generated_projects.each do |project|
+    project.targets.each do |target|
+        target.build_configurations.each do |config|
+            config.build_settings["DEVELOPMENT_TEAM"] = "8856CSH399"
+         end
+    end
+  end
+end
+
 platform :ios,'9.0'
 def swiftlint_pods
 	pod 'SwiftLint'
 end
 
+def autoLayout_pods
+  pod 'SnapKit'
+end
+
+
+def swiftlint_pods
+  pod 'SwiftLint'
+end
 target 'precommit' do
-	swiftlint_pods
+  swiftlint_pods
+  autoLayout_pods
 end

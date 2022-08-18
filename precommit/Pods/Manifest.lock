@@ -1,16 +1,20 @@
 PODS:
-  - SwiftLint (0.47.1)
+  - SnapKit (4.2.0)
+  - SwiftLint (0.48.0)
 
 DEPENDENCIES:
+  - SnapKit
   - SwiftLint
 
 SPEC REPOS:
   trunk:
+    - SnapKit
     - SwiftLint
 
 SPEC CHECKSUMS:
-  SwiftLint: f80f1be7fa96d30e0aa68e58d45d4ea1ccaac519
+  SnapKit: fe8a619752f3f27075cc9a90244d75c6c3f27e2a
+  SwiftLint: 284cea64b6187c5d6bd83e9a548a64104d546447
 
-PODFILE CHECKSUM: 93cfdac3d848803fab3f9d17edb49a6f873c373f
+PODFILE CHECKSUM: b3a65d0660b305d93a2cabefd37114256b0a2a67
 
-COCOAPODS: 1.9.3
+COCOAPODS: 1.11.3

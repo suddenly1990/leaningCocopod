@@ -3,7 +3,7 @@ repos:
     rev: 0.49.0-rc.1
     hooks:
     -   id: swiftlint
--   repo: git@github.com:pocc/pre-commit-hooks.git
-    rev: v1.3.5
-    hooks:
-    -   id: oclint
+#-   repo: git@github.com:pocc/pre-commit-hooks.git
+#    rev: v1.3.5
+#    hooks:
+#    -   id: oclint
