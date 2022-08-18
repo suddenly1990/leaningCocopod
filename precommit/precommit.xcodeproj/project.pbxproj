@@ -126,6 +126,7 @@
 		230983EF2888FB96003E0B35 /* precommit */ = {
 			isa = PBXGroup;
 			children = (
+				B2C6303A28AE2728002D2B32 /* nocheck */,
 				B2C6303828AE2633002D2B32 /* .pre-commit-config.yaml */,
 				B2C6303328AE24D0002D2B32 /* .swiftlint.yml */,
 				230983F02888FB96003E0B35 /* AppDelegate.h */,
@@ -139,7 +140,6 @@
 				230983FE2888FB98003E0B35 /* LaunchScreen.storyboard */,
 				230984012888FB98003E0B35 /* Info.plist */,
 				230984022888FB98003E0B35 /* main.m */,
-				B2C6303628AE2539002D2B32 /* TestSwift.swift */,
 				B2C6303528AE2539002D2B32 /* precommit-Bridging-Header.h */,
 			);
 			path = precommit;
@@ -161,6 +161,14 @@
 				230984192888FB98003E0B35 /* Info.plist */,
 			);
 			path = precommitUITests;
+			sourceTree = "<group>";
+		};
+		B2C6303A28AE2728002D2B32 /* nocheck */ = {
+			isa = PBXGroup;
+			children = (
+				B2C6303628AE2539002D2B32 /* TestSwift.swift */,
+			);
+			path = nocheck;
 			sourceTree = "<group>";
 		};
 		C07C3C52E256D4D70166A514 /* Pods */ = {
@@ -339,7 +347,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\n";
+			shellScript = "\"${PODS_ROOT}/SwiftLint/swiftlint\" --config .swiftlint.yml \n";
 		};
 /* End PBXShellScriptBuildPhase section */
 
